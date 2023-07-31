@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        <mynthra>
+    </title>
+    <head>
+    <link rel="stylesheet" type:"text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <div class="slideshow-container"></div>
+        <div class="mySlides fade">
+            <img src="C:\Users\srava\OneDrive\Desktop\myntra\1.jpg" class="centre">
+          </div>
+          <div class="mySlides fade">
+            <img src="C:\Users\srava\OneDrive\Desktop\myntra\2.jpg" class="centre">
+          </div>
+          <div class="mySlides fade">
+            <img src="C:\Users\srava\OneDrive\Desktop\myntra\3.jpg" class="centre">
+          </div>
+          <div class="mySlides fade">
+            <img src="C:\Users\srava\OneDrive\Desktop\myntra\4.jpg" class="centre">
+          </div>
+          <div class="mySlides fade">
+            <img src="C:\Users\srava\OneDrive\Desktop\myntra\5.jpg" class="centre">
+          </div>
+          <div class="mySlides fade">
+            <img src="C:\Users\srava\OneDrive\Desktop\myntra\6.jpg" class="centre">
+          </div>
+          <div class="mySlides fade">
+            <img src="C:\Users\srava\OneDrive\Desktop\myntra\7.jpg" class="centre">
+          </div>
+          <div class="mySlides fade">
+            <img src="C:\Users\srava\OneDrive\Desktop\myntra\8.jpg" class="centre">
+          
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+          </div>  
+          <img src="C:\Users\srava\OneDrive\Desktop\myntra\9.jpg" class="centre">
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        <h2>DEAL OF THE DAY</h2>
+
+        <a href="https://www.myntra.com/women-kurtas-kurtis-suits?f=Categories%3AKurtas&rf=Price%3A239.0_900.0_239.0%20TO%20900.0&sort=popularity"><img src="C:\Users\srava\OneDrive\Desktop\myntra\10.jpg" class="s1" ></a>
+        <a href="https://www.myntra.com/womens-western-wear?f=Brand%3AAntheaa%2CAthena%2CBerrylush%2CKASSUALLY%2CSASSAFRAS%2CSTREET%209%2CTokyo%20Talkies%2CplusS%3A%3ACategories%3ADresses&rf=Price%3A216.0_900.0_216.0%20TO%20900.0&sort=popularity"><img src="c:\Users\srava\OneDrive\Desktop\myntra\11.jpg" class="s1"></a>
+        <a href="https://www.myntra.com/men-footwear?f=Categories%3AFormal%20Shoes&rf=Discount%20Range%3A30.0_100.0_30.0%20TO%20100.0"><img src="C:\Users\srava\OneDrive\Desktop\myntra\12.jpg" class="s1"></a>
+        <a href="https://www.myntra.com/mfb-brand?f=Categories%3ACasual%20Shoes%2CFlip%20Flops%2CFormal%20Shoes%2CSandals%3A%3AGender%3Amen%2Cmen%20women"><img src="C:\Users\srava\OneDrive\Desktop\myntra\13.jpg" class="s1"></a>
+        <a href="https://www.myntra.com/mfb-brand?f=Categories%3AFlats%2CHeels%3A%3AGender%3Amen%20women%2Cwomen&rf=Discount%20Range%3A60.0_100.0_60.0%20TO%20100.0"><img src="C:\Users\srava\OneDrive\Desktop\myntra\14.jpg" class="s1"></a>
+        <a href="https://www.myntra.com/home-furnishing-menu?f=Categories%3AAir%20Fryer%2CAprons%2CBakeware%2CCoffee%20Maker%2CCookware%2CCutlery%2CDining%20Essentials%2CDinnerware%2CEgg%20Boiler%2CElectric%20Barbecue%2CElectric%20Chopper%2CElectric%20Kettle%2CJuicers%2CKitchen%20Linen%20Sets%2CKitchen%20Storage%2CKitchen%20Tools%2CKitchen%20Towels%2CSandwich%20Maker%2CServeware%2CSoup%20Maker%2CTable%20Cloth%2CTable%20Covers%2CTable%20Napkins%2CTable%20Placemats%2CToasters&rf=Discount%20Range%3A10.0_100.0_10.0%20TO%20100.0"><img src="C:\Users\srava\OneDrive\Desktop\myntra\15.jpg" class="s1"><a>
+        <a href="https://www.myntra.com/mfb-accessories?f=Categories%3ABackpacks%2CBelts%2CCaps%2CDuffel%20Bag%2CGloves%2CHandkerchief%2CRucksacks%2CScarves%2CSocks%2CTies%2CWaist%20Pouch%2CWallets%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A50.0_100.0_50.0%20TO%20100.0"><img src="C:\Users\srava\OneDrive\Desktop\myntra\16.jpg" class="s1"></a>
+        <a href="https://www.myntra.com/kama-ayurveda"><img src="C:\Users\srava\OneDrive\Desktop\myntra\17.jpg" class="s1"></a>
+        
+        <h2>BEST OF MYNTRA EXCLUSIVE BRANDS</h2>
+
+        <a href="https://www.myntra.com/mfb-clearance"><img src="C:\Users\srava\OneDrive\Desktop\myntra\18.jpg" class="s2"></a>
+        <a href="https://www.myntra.com/mfb-brand?f=Categories%3AKurta%20Sets%3A%3AGender%3Amen%20women%2Cwomen&rf=Discount%20Range%3A50.0_66.0_50.0%20TO%2066.0"><img src="C:\Users\srava\OneDrive\Desktop\myntra\19.jpg" class="s2"></a>
+        <a href="https://www.myntra.com/mfb-brand?f=Categories%3AKurtas%3A%3AGender%3Amen%20women%2Cwomen&rf=Discount%20Range%3A50.0_66.0_50.0%20TO%2066.0"><img src="C:\Users\srava\OneDrive\Desktop\myntra\20.jpg" class="s2"></a>
+        <a href="https://www.myntra.com/mfb-brand?f=Categories%3ATops%3A%3AGender%3Amen%20women%2Cwomen&rf=Discount%20Range%3A10.0_66.0_10.0%20TO%2066.0"><img src="C:\Users\srava\OneDrive\Desktop\myntra\21.jpg" class="s2"></a>
+        <a href="https://www.myntra.com/mfb-brand?f=Brand%3AHERE%26NOW%2CRoadster%3A%3ACategories%3AShirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A50.0_100.0_50.0%20TO%20100.0"><img src="C:\Users\srava\OneDrive\Desktop\myntra\22.jpg" class="s2"></a>
+        <a href="https://www.myntra.com/mfb-brand?f=Brand%3AAnouk%2CHouse%20of%20Pataudi%2CTaavi%3A%3ACategories%3AKurta%20Sets%2CKurtas%2CShirts%3A%3AGender%3Amen%2Cmen%20women"><img src="C:\Users\srava\OneDrive\Desktop\myntra\23.jpg" class="s2">
+        <a href="https://www.myntra.com/mfb-brand?f=Brand%3AHarvard%2CKook%20N%20Keech%20Marvel%2CMast%20%26%20Harbour%2CModa%20Rapido%2CMr%20Bowerbird%2CSINGLE%2CWROGN%2Cether%3A%3ACategories%3AShirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A10.0_66.0_10.0%20TO%2066.0"><img src="C:\Users\srava\OneDrive\Desktop\myntra\24.jpg" class="s2">
+        
+          <h2>TOP PICKS</h2>
+
+          <a href="https://www.myntra.com/kurta-sets?f=Gender%3Amen%20women%2Cwomen&rf=Price%3A199.0_1299.0_199.0%20TO%201299.0"><img src="C:\Users\srava\OneDrive\Desktop\myntra\25.jpg" class="s2"></a>
+          <a href="https://www.myntra.com/kurtas-women?rf=Price%3A299.0_799.0_299.0%20TO%20799.0"><img src="C:\Users\srava\OneDrive\Desktop\myntra\26.jpg" class="s2"></a>
+          <a href="https://www.myntra.com/dresses?f=Gender%3Amen%20women%2Cwomen&rf=Price%3A199.0_899.0_199.0%20TO%20899.0"><img src="C:\Users\srava\OneDrive\Desktop\myntra\27.jpg" class="s2"></a>
+          <a href="https://www.myntra.com/jeans?f=Gender%3Amen%20women%2Cwomen&rf=Price%3A299.0_999.0_299.0%20TO%20999.0"><img src="C:\Users\srava\OneDrive\Desktop\myntra\28.jpg" class="s2"></a>
+          <a href="https://www.myntra.com/men-topwear?f=Categories%3AShirts&rf=Price%3A296.0_799.0_296.0%20TO%20799.0"><img src="C:\Users\srava\OneDrive\Desktop\myntra\29.jpg" class="s2"></a>
+          <a href="https://www.myntra.com/t-shirt?f=Gender%3Amen%2Cmen%20women&rf=Price%3A299.0_499.0_299.0%20TO%20499.0"><img src="C:\Users\srava\OneDrive\Desktop\myntra\30.jpg" class="s2"></a>
+          <a href="https://www.myntra.com/men-bottomwear?f=Categories%3ATrousers&rf=Price%3A449.0_899.0_449.0%20TO%20899.0"><img src="C:\Users\srava\OneDrive\Desktop\myntra\31.jpg" class="s2"></a>
+
+          
+          <h6>ONLINE SHOPPING</h6>
+          <ul>
+          <h6>
+         <dt><li><a href="https://www.myntra.com/shop/women">Men</a></dt>
+          <dt><li><a href="https://www.myntra.com/shop/kids">Kids</a></li></dt>
+          <dt><li><a href="https://www.myntra.com/shop/home-living">Home & Living</a></li></dt>
+          <dt><li><a href="https://www.myntra.com/personal-care">Beauty</a></li></dt>
+          <dt><li><a href="https://www.myntra.com/giftcard">Gift Card</a></li></dt>
+          <dt><li><a href="https://www.myntra.com/myntrainsider?cache=false">Myntra Insider</a></li></dt>
+         </h6>
+         </ul>
+
+           
+            <h6>CUSTOMER POLICIES</h6>
+               <ul>
+                 <h6>
+              <dt><li><a href="https://www.myntra.com/contactus">Contact Us</a></li></dt>
+               <dt><li><a href="https://www.myntra.com/faqs">FAQ</a></li></dt>
+               <dt><li><a href="https://www.myntra.com/tac">T&C</a></li></dt>
+               <dt><li><a href="https://www.myntra.com/termsofuse">Terms Of Use</a></li></dt>
+               <dt><li><a href="https://www.myntra.com/login?referer=https%3A%2F%2Fwww.myntra.com%2Fmy%2Forders">Track Orders</a></li></dt>
+               <dt><li><a href="https://www.myntra.com/faqs#shipping">Shipping</a></li></dt>
+               <dt><li><a href="https://www.myntra.com/faqs#cancel">Cancellation</a></li></dt>
+               <dt><li><a href="https://www.myntra.com/faqs#returns">Returns</a></li></dt>
+               <dt><li><a href="https://www.myntra.com/privacypolicy">Privacy policy</a></li></dt>
+               <dt><li><a href="https://www.myntra.com/termsofuse#23.%20Grievance%20Officer">Grievance Officer</a></li></dt>
+                 </h6>
+                </ul>
+
+          
+                  <h6>USEFUL LINKS</h6>
+                  <ul>
+                    <h6>
+                 <dt><li><a href="https://blog.myntra.com/">Blog</a></dt>
+                  <dt><li><a href="https://careers.myntra.com/">Careers</a></li></dt>
+                  <dt><li><a href="https://www.myntra.com/sitemap">Site Map</a></li></dt>
+                  <dt><li><a href="https://www.myntra.com/corp-info">Corparate Information</a></li></dt>
+                  <dt><li><a href="https://www.myntra.com/security/whitehat">Whitehat</a></li></dt>
+                </h6>
+                   </ul>
+
+            <div class="s3">
+                  <h6>POPULAR SEARCHES</h6>
+                  <p>
+                  
+                  Makeup|Dresses For Girls|T-Shirts|Sandals|Headphones|Babydolls|Blazers For Men|Handbags|Ladies|Watches|Bags|Sport|Shoes|Reebok Shoes|Puma Shoes| 
+                  Boxers|Wallets|Tops|Earrings|Fastrack Watches|Kurtis|Nike|Smart Watches|Titan Watches|Designer Blouse|Gowns|Rings|Cricket Shoes|Forever 21|Eye|
+                  Makeup|Photo Frames|Punjabi Suits|Bikini|Myntra Fashion Show|Lipstick|Saree|Watches|Dresses|Lehenga|Nike Shoes|Goggles|Bras|Suit|Chinos|Shoes| 
+                  Adidas Shoes|Woodland Shoes|Jewellery|Designers Sarees
+                  </p>
+                  
+                  <h6>© 2023 www.myntra.com. All rights reserved.</h6>
+                  <h6>Registered Office Address</h6>
+                  <p>
+                    <dl>
+                      <h6>
+                    <dt>Buildings Alyssa,</dt>
+                    <dt>Begonia and Clover situated in Embassy Tech Village,</dt>
+                    <dt>Outer Ring Road,</dt>
+                    <dt>Devarabeesanahalli Village,</dt>
+                    <dt>Varthur Hobli,</dt>
+                    <dt>Bengaluru – 560103, India</dt>
+                    </h6>
+                  </dl>
+                  </p>
+                  <h6>ONLINE SHOPPING MADE EASY AT MYNTRA</h6>
+                  <p>
+                    If you would like to experience the best of online shopping for men, women and kids in India, you are at the right place. Myntra is the ultimate destination for fashion and lifestyle, being host to a wide array of merchandise including clothing, footwear, accessories, jewellery, personal care products and more. It is time to redefine your style statement with our treasure-trove of trendy items. Our online store brings you the latest in designer products straight out of fashion houses. You can shop online at Myntra from the comfort of your home and get your favourites delivered right to your doorstep.
+                  </p>
+                  <h6>BEST ONLINE SHOPPING SITE IN INDIA FOR FASHION</h6>
+                  <p>
+                    Be it clothing, footwear or accessories, Myntra offers you the ideal combination of fashion and functionality for men, women and kids. You will realise that the sky is the limit when it comes to the types of outfits that you can purchase for different occasions.
+                  </p>
+                  <ol>
+                    <h5>1.Smart men’s clothing-</h5>
+                    <bt>
+                      At Myntra you will find myriad options in smart formal shirts and trousers, cool T-shirts and jeans, or kurta and pyjama combinations for men. Wear your attitude with printed T-shirts. Create the back-to-campus vibe with varsity T-shirts and distressed jeans. Be it gingham, buffalo, or window-pane style, checked shirts are unbeatably smart. Team them up with chinos, cuffed jeans or cropped trousers for a smart casual look. Opt for a stylish layered look with biker jackets. Head out in cloudy weather with courage in water-resistant jackets. Browse through our innerwear section to find supportive garments which would keep you confident in any outfit.
+                    </bt>
+                    <h5>2.Trendy women’s clothing-</h5>
+                    <bt>
+                      Online shopping for women at Myntra is a mood-elevating experience. Look hip and stay comfortable with chinos and printed shorts this summer. Look hot on your date dressed in a little black dress, or opt for red dresses for a sassy vibe. Striped dresses and T-shirts represent the classic spirit of nautical fashion. Choose your favourites from among Bardot, off-shoulder, shirt-style, blouson, embroidered and peplum tops, to name a few. Team them up with skinny-fit jeans, skirts or palazzos. Kurtis and jeans make the perfect fusion-wear combination for the cool urbanite. Our grand sarees and lehenga-choli selections are perfect to make an impression at big social events such as weddings. Our salwar-kameez sets, kurtas and Patiala suits make comfortable options for regular wear.
+                  </bt>
+                  <h5>3.Fashionable footwear-</h5>
+                  <bt>
+                    While clothes maketh the man, the type of footwear you wear reflects your personality. We bring you an exhaustive lineup of options in casual shoes for men, such as sneakers and loafers. Make a power statement at work dressed in brogues and oxfords. Practice for your marathon with running shoes for men and women. Choose shoes for individual games such as tennis, football, basketball, and the like. Or step into the casual style and comfort offered by sandals, sliders, and flip-flops. Explore our lineup of fashionable footwear for ladies, including pumps, heeled boots, wedge-heels, and pencil-heels. Or enjoy the best of comfort and style with embellished and metallic flats.
+                  </bt>
+                  <h5>4.Stylish accessories-</h5>
+                  <bt>
+                    Myntra is one of the best online shopping sites for classy accessories that perfectly complement your outfits. You can select smart analogue or digital watches and match them up with belts and ties. Pick up spacious bags, backpacks, and wallets to store your essentials in style. Whether you prefer minimal jewellery or grand and sparkling pieces, our online jewellery collection offers you many impressive options.
+                  </bt>
+                  <h5>5.Fun and frolic-</h5>
+                  <bt>
+                    Online shopping for kids at Myntra is a complete joy. Your little princess is going to love the wide variety of pretty dresses, ballerina shoes, headbands and clips. Delight your son by picking up sports shoes, superhero T-shirts, football jerseys and much more from our online store. Check out our lineup of toys with which you can create memories to cherish.
+                  </bt>
+                  <h5>6.Beauty begins here-</h5>
+                  <bt>
+                    You can also refresh, rejuvenate and reveal beautiful skin with personal care, beauty and grooming products from Myntra. Our soaps, shower gels, skin care creams, lotions and other ayurvedic products are specially formulated to reduce the effect of aging and offer the ideal cleansing experience. Keep your scalp clean and your hair uber-stylish with shampoos and hair care products. Choose makeup to enhance your natural beauty.
+                  </bt>
+                  </ol>
+                  <br>
+                  <bt>
+                    Myntra is one of the best online shopping sites in India which could help transform your living spaces completely. Add colour and personality to your bedrooms with bed linen and curtains. Use smart tableware to impress your guest. Wall decor, clocks, photo frames and artificial plants are sure to breathe life into any corner of your home.
+                  </bt>
+                </br>
+                <h5>
+                  AFFORDABLE FASHION AT YOUR FINGERTIPS
+                </h5>
+                <p>
+                  Myntra is one of the unique online shopping sites in India where fashion is accessible to all. Check out our new arrivals to view the latest designer clothing, footwear and accessories in the market. You can get your hands on the trendiest style every season in western wear. You can also avail the best of ethnic fashion during all Indian festive occasions. You are sure to be impressed with our seasonal discounts on footwear, trousers, shirts, backpacks and more. The end-of-season sale is the ultimate experience when fashion gets unbelievably affordable.
+                </p>
+                <h5>MYNTRA INSIDER</h5>
+                <p>
+                  Every online shopping experience is precious. Hence, a cashless reward-based customer loyalty program called Myntra Insider was introduced to enhance your online experience. The program is applicable to every registered customer and measures rewards in the form of Insider Points.
+                </p>
+                <br>
+                <p>
+                  There are four levels to achieve in the program, as the Insider Points accumulate. They are - Insider, Select, Elite or Icon. Apart from offering discounts on Myntra and partner platform coupons, each tier comes with its own special perks.
+                </p>
+              </br>
+              <ul>
+                <h6>Insider</h6>
+                <li><bt>Opportunity to master any domain in fashion with tips from celebrity stylists at Myntra Masterclass sessions.</bt></li>
+                <li><bt>Curated collections from celeb stylists.</bt></li>
+                <h6>Elite</h6>
+                <li><bt>VIP access to special sale events such as the End of Reason Sale (EORS) and product launches.</bt></li>
+                <li><bt>Exclusive early access to Limited Edition products</bt></li>
+                <h6>Icon</h6>
+                <li><bt>Chance to get on guest lists for special events.</bt></li>
+              </ul>
+              <h5>
+                Myntra Studio - The Personalised Fashion Feed You Wouldn’t Want To Miss Out On
+              </h5>
+              <p>The world wide web is evolving at a relentless pace, and with an accelerated growth each passing year, there is bound to be an overwhelming surge of online content. It was for this very reason that personalisation of search feeds was proposed as a solution to combat the overload of irrelevant information.</p>
+              <p>
+                Several social media platforms such as Facebook and Instagram along with various online shopping websites have chosen to help filter content, increasing user engagement, retention and customer loyalty.
+              </p>
+              <p>
+                Myntra is one such online shopping website that joins the list of platforms that help curate a personalised fashion feed. Named theMyntra Studio, this personalised search feed brings you the latest men and women’s fashion trends, celebrity styles, branded content and daily updates from your favourite fashion labels.
+              </p>
+              <p>
+                If you are wondering how impactful Myntra Studio can be, we are listing out five perks of having a rich, meaningful, and personalised fashion feed in your life.
+              </p>
+              <ol>
+              <h5>1.Keep Up With What Your Favourite Fashion Icons Are Upto</h5>
+              <p>The #OOTD, AKA outfit of the day hashtag trend has been a rage among fashion bloggers and stylists. The whole concept of building an outfit from scratch and showcasing it to a huge community of enthusiasts using the hashtag has helped individuals with understanding trends and making suitable for daily wear.</p>
+              <p>Imagine if you could keep up with every piece of clothing and accessory worn by the fashion icons you look upto. From Sonam Kapoor to Hailey Baldwin Bieber, Myntra Studio has a ‘Stories’ feature to help track celebrity fashion trends, exploring details such as their outfit of the day. This way, you would not ever miss out on the latest celebrity fashion trends, from all around the world.</p>
+              <h5>2.Quick Fashion Tip And Tricks</h5>
+              <p>
+                Whether it is draping a saree into a dhoti style, wearing the right lingerie under certain dresses or discovering multiple uses out of heavy ethnic wear, Myntra Studio will help you acquire some unique and useful fashion hacks. Each hack is designed with the intention to help you get the best wear out of everything in your wardrobe.
+              </p>
+              <h5>3.Updates on What Is Trending and New Product Launches</h5>
+              <p>Since fast fashion seems to be extremely hard to keep up with these days, a quick update on what is trending in accessories, clothing and footwear would certainly be of great help. Myntra Studio helps you stay connected to the most beloved and sought after brands such as Puma, Coverstory, The Label Life and so many more.</p>
+             <p>Your feed keeps you updated with stories of what the brands are creating including clothing, footwear and jewellery, along with their new seasonal collections.</p>
+             <h5>4.Explicit Step-By-Step Beauty Routines From Experts</h5>
+             <p>Just like fashion, the beauty community keeps on growing, and with brands such as Huda Beauty, MAC and the latest Kay Beauty by Katrina Kaif, are constantly coming up with mind-blowing products. Whether it is creating a no-makeup look, different winged eyeliners, do-it-yourself facial masks and other personal care beauty routines, Myntra Studio is here for you.</p>
+             <h5>5.Celebrity Confessions And A Look Into Their Lives</h5>
+             <p>A bonus feature that Myntra Studio has in store for you is celebrity confessions and a peek into their lives. So, Myntra helps you stay connected to your most beloved celebrities in a matter of clicks.</p>
+             <p>If you are very particular when it comes to the content you wish to view and engage with on social media, the ability to intricately filter content helps achieve that. Applying the same formula for hardcore fashion lovers and shoppers, Myntra Studio brings you a daily fashion fix incorporating everything that you love, all at one place. Sign up on Myntra today and start organising your fashion feed, just the way you want to.</p>
+            </ol>
+             <h5>MYNTRA APP</h5>
+             <p>Myntra, India’s no. 1 online fashion destination justifies its fashion relevance by bringing something new and chic to the table on the daily. Fashion trends seem to change at lightning speed, yet the Myntra shopping app has managed to keep up without any hiccups. In addition, Myntra has vowed to serve customers to the best of its ability by introducing its first-ever loyalty program, The Myntra Insider. Gain access to priority delivery, early sales, lucrative deals and other special perks on all your shopping with the Myntra app. Download the Myntra app on your Android or IOS device today and experience shopping like never before!</p>
+            <h5>HISTORY OF MYNTRA</h5>
+            <p>Becoming India’s no. 1 fashion destination is not an easy feat. Sincere efforts, digital enhancements and a team of dedicated personnel with an equally loyal customer base have made Myntra the online platform that it is today. The original B2B venture for personalized gifts was conceived in 2007 but transitioned into a full-fledged ecommerce giant within a span of just a few years. By 2012, Myntra had introduced 350 Indian and international brands to its platform, and this has only grown in number each passing year. Today Myntra sits on top of the online fashion game with an astounding social media following, a loyalty program dedicated to its customers, and tempting, hard-to-say-no-to deals.</p>
+            <p>The Myntra shopping app came into existence in the year 2015 to further encourage customers’ shopping sprees. Download the app on your Android or IOS device this very minute to experience fashion like never before.</p>
+            <h5>SHOP ONLINE AT MYNTRA WITH COMPLETE CONVENIENCE</h5>
+            <p>Another reason why Myntra is the best of all online stores is the complete convenience that it offers. You can view your favourite brands with price options for different products in one place. A user-friendly interface will guide you through your selection process. Comprehensive size charts, product information and high-resolution images help you make the best buying decisions. You also have the freedom to choose your payment options, be it card or cash-on-delivery. The 14-day returns policy gives you more power as a buyer. Additionally, the try-and-buy option for select products takes customer-friendliness to the next level.</p>
+            <p>Enjoy the hassle-free experience as you shop comfortably from your home or your workplace. You can also shop for your friends, family and loved-ones and avail our gift services for special occasions.</p>
+        </div>
+          </html>
